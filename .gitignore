@@ -1,52 +1,30 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+/*
+Program aque calcula a média aritmética
+Obter as 2 notas de provas
+Calcular a média aritmética
+Se a média for igual ou maior que 7, o aluno foi aprovado
+senão ele foi reprovado 
+*/
+int main(void) {
+//declaração de variável
+float nota1, nota2, media;
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+//Obter as 2 notas de provas
+  printf("Digite a primeira nota:  ");
+  scanf("%f", &nota1);
 
-# Linker output
-*.ilk
-*.map
-*.exp
+  printf("Digite a segunda  nota:  ");  
+  scanf("%f", &nota2);
 
-# Precompiled Headers
-*.gch
-*.pch
+//Calcular a média aritmética
+  media = (nota1 + nota2)/2;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+//mostro o resultado
+if (media >= 7 )  
+  printf("Aprovado! \n");
+else   
+  printf("Reprovado! \n");
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+  return 0;
+}
